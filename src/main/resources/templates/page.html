@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script type="text/javascript" src="https://livejs.com/live.js"></script>    <meta charset="UTF-8">
+    <meta name="description" content="4">
+    <title>4</title>
+</head><body>
+ <a th:href="@{/page/{slug}/delete(slug=${page.slug})}" >Delete</a> <a th:href="@{/page/{slug}/update(slug=${page.slug})}">Update</a><h1>56</h1>">
+    <form action="#" th:action="@{/updatePage}" th:object="${page}" met123123
+    <div><input type="text" th:field="*{title}" /></div>
+    Description
+    <div><input type="text" th:field="*{description}" /></div>
+    Slug
+    <div><input type="text" th:field="*{slug}" /></div>
+    MenuLabel
+    <div><input type="text" th:field="*{menuLabel}" /></div>
+    H1
+    <div><input type="text" th:field="*{h1}" /></div>
+    Priority
+    <div><input type="text" th:field="*{priority}" /></div>
+    <div><input type="hidden" th:field="*{id}"/></div>
+    <p>Write the code that will be inside the body tag<Br>
+    <div><textarea rows="12" id="code"  name="code" th:utext="${code}" th:value="${code}" >
+    </body>

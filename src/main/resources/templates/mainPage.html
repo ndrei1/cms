@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Link to pages
+<tr th:each="page:${pages}"
+    class="row" th:classappend="${page.id} ? 'odd-row' : 'even-row'">
+    <div>
+        <a th:href="@{/page/{slug}(slug=${page.slug})}" th:text="${page.menuLabel}"></a>
+    </div>
+</tr>
+
+Form Update Page
+<form th:action="@{/updatePublished}" method="post">
+    <label th:for="publishedCheck">Тест действия checkbox</label>
+    <input type="checkbox" name="publishedCheck"/>
+    <button type="submit">Submit form</button>
+</form>
+Form Create Page
+<a href="/createPage">To cr Page?</a></p>
+</body>
+</html>

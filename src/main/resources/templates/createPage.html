@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+add Page
+
+<form action="#" th:action="@{/addPage}" th:object="${page}" method="post">
+    Title
+    <div> <input type="text" th:field="*{title}"/></div>
+    Description
+    <div>  <input type="text" th:field="*{description}"/></div>
+    Slug
+    <div>  <input type="text" th:field="*{slug}"/></div>
+    MenuLabel
+    <div> <input type="text" th:field="*{menuLabel}"/></div>
+    H1
+    <div> <input type="text" th:field="*{h1}"/></div>
+    Priority
+    <div>  <input type="text" th:field="*{priority}"/></div>
+
+    <p>Write the code that will be inside the body tag<Br>
+    <div><textarea style="width:400px; height:400px;" name="htmlCode" th:text="*{htmlCode}">
+    </textarea></div>
+    <label th:for="publishedCheck">Public this page</label>
+    <input type="checkbox" name="publishedCheck" />
+    <button type="submit">Submit form</button>
+</form>
+
+
+</body>
+</html>

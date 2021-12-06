@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "spring.resources.cache-period",
+      "type": "java.lang.String",
+      "description": "Description for spring.resources.cache-period."
+    },
+    {
+      "name": "project.base-dir",
+      "type": "java.lang.String",
+      "description": "Description for project.base-dir."
+    }
+  ] }
